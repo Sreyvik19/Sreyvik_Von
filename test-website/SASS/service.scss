@@ -1,0 +1,15 @@
+@import "./compoments/variable";
+@import "./compoments/mixins";
+@import "./compoments/service/service-section";
+@import "./compoments/service/header";
+@import "./compoments/service/footer";
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  background: rgba(255, 255, 255, 0.051);
+  line-height: 1.6;
+}

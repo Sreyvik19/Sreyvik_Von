@@ -1,0 +1,17 @@
+@import "./compoments/mixins";
+@import "./compoments/variable";
+@import "./compoments/home/header";
+@import "./compoments/home/hero-highlight";
+@import "./compoments/home/footer";
+@import "./compoments/home/about-section";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  background: rgba(255, 255, 255, 0.051);
+  line-height: 1.6;
+}

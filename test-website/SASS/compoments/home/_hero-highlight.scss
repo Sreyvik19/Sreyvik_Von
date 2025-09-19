@@ -1,0 +1,57 @@
+.highlight {
+  padding: 80px 100px;
+  @include flex-between;
+  
+
+  .main-ss {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 650px;
+
+    h1 {
+      color: $button-color;
+      font-size: 30px;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.567);
+    }
+  }
+
+  .main-bb {
+    img {
+       border-radius: 15px;
+      width: 580px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  a {
+    background-color:orangered;
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 110px;
+  }
+
+  a:hover {
+    background-color:rgba(255, 68, 0, 0.87);
+    box-shadow: 2px 2px 2px rgba(148, 140, 137, 0.792);
+  }
+}

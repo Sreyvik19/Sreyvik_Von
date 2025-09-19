@@ -1,0 +1,39 @@
+.header {
+  @include flex-between;
+  padding:5px 10px;
+  background: rgba(22, 22, 22, 0.134);
+  color: $light-color;
+  width: 98.8%;
+  position: fixed;
+  img {
+    width: 100px;
+  }
+
+  .nav {
+    ul {
+      display: flex;
+      gap: 5px;
+      list-style: none;
+
+      li {
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: 500;
+          transition: 0.3s;
+          padding: 30px 20px;
+        }
+
+        a:hover {
+          background: linear-gradient(to bottom, #ff4d00, rgba(255, 94, 0, 0.15));
+         
+        }
+
+        a.active {
+          background: linear-gradient(to bottom, #ff4d00, rgba(255, 94, 0, 0.15));
+         
+        }
+      }
+    }
+  }
+}

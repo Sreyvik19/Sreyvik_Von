@@ -1,0 +1,22 @@
+.contact {
+  padding: 4em 2em;
+  text-align: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 400px;
+    margin: 0 auto 2em auto;
+
+    input, textarea {
+      padding: 0.5em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+  }
+
+  .contact-info p { margin: 0.5em 0; }
+}
+
