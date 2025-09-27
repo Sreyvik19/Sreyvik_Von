@@ -1,32 +1,100 @@
-.contact {
-  padding: 4em 2em;
+.about {
+  padding: 133px 60px;
+  background-image: url(../../../image/Blue\ Green\ Modern\ Bold\ Digital\ Marketing\ Presentation.png);
   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.contact form {
+.about .team-values {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap: 1em;
-  max-width: 400px;
-  margin: 0 auto 2em auto;
+  color: #ecf0f1;
+  margin: 130px;
 }
-.contact form input, .contact form textarea {
-  padding: 0.5em;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.about .team-values .team {
+  font-weight: bold;
+  font-size: 65px;
+}
+.about .team-values .value {
+  font-size: 20px;
+  color: orangered;
+}
+
+.container {
   width: 100%;
+  max-width: 1100px;
+  margin: 30px auto;
 }
-.contact .contact-info p {
-  margin: 0.5em 0;
+.container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: orangered;
+}
+.container .contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.container .info-box {
+  padding: 15px;
+}
+.container .info-box i {
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: block;
+}
+.container .form-map {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.container .form-box {
+  flex: 1 1 45%;
+}
+.container .form-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container .form-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container .form-box button {
+  padding: 12px 25px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.container .map-box {
+  flex: 1 1 45%;
+}
+.container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 5px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
-  background: rgba(225, 226, 228, 0);
+  padding: 5px 10px;
+  background: rgba(22, 22, 22, 0.134);
   color: #ecf0f1;
-  width: 95.8%;
+  width: 98.8%;
   position: fixed;
 }
 .header img {
@@ -42,13 +110,62 @@
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
-  padding: 35px 20px;
+  padding: 30px 20px;
 }
 .header .nav ul li a:hover {
   background: linear-gradient(to bottom, #ff4d00, rgba(255, 94, 0, 0.15));
 }
 .header .nav ul li a.active {
   background: linear-gradient(to bottom, #ff4d00, rgba(255, 94, 0, 0.15));
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-background .content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 40%;
+}
+.video-background .content h1 {
+  font-size: 50px;
+}
+.video-background .content h1 span {
+  font-size: 65px;
+  color: #ff4d00;
+}
+.video-background .content p {
+  color: rgba(148, 139, 139, 0.684);
+  margin-bottom: 40px;
+}
+.video-background .content a {
+  background: linear-gradient(to right, rgba(228, 86, 34, 0.6274509804), rgba(45, 226, 214, 0.6039215686));
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.video-background .content a:hover {
+  background: linear-gradient(to right, rgba(228, 86, 34, 0.6274509804), rgba(45, 226, 214, 0.6039215686));
+  box-shadow: 2px 2px 2px rgba(255, 68, 0, 0.779);
 }
 
 .footer {

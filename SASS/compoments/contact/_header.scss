@@ -1,40 +1,94 @@
 .header {
-    @include flex-between;
-    padding: 1em 2em;
-    background: rgba(225, 226, 228, 0);
-    color: $light-color;
-    width: 95.8%;
-    position: fixed;
-    img {
-        width: 100px;
-    }
+  @include flex-between;
+  padding:5px 10px;
+  background: rgba(22, 22, 22, 0.134);
+  color: $light-color;
+  width: 98.8%;
+  position: fixed;
+  img {
+    width: 100px;
+  }
 
-    .nav {
+  .nav {
+    ul {
+      display: flex;
+      gap: 5px;
+      list-style: none;
 
-        ul {
-            display: flex;
-            gap: 5px;
-            list-style: none;
-
-            li {
-                a {
-                    color: #fff;
-                    text-decoration: none;
-                    font-weight: 500;
-                    transition: 0.3s;
-                    padding: 35px 20px;
-                }
-
-                a:hover {
-                    background: linear-gradient(to bottom, #ff4d00, rgba(255, 94, 0, 0.15));
-
-                }
-
-                a.active {
-                    background: linear-gradient(to bottom, #ff4d00, rgba(255, 94, 0, 0.15));
-
-                }
-            }
+      li {
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: 500;
+          transition: 0.3s;
+          padding: 30px 20px;
         }
+
+        a:hover {
+          background: linear-gradient(to bottom, #ff4d00, rgba(255, 94, 0, 0.15));
+         
+        }
+
+        a.active {
+          background: linear-gradient(to bottom, #ff4d00, rgba(255, 94, 0, 0.15));
+         
+        }
+      }
     }
+  }
+}
+
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 40%;
+
+    h1 {
+      font-size: 50px;
+
+      span {
+        font-size: 65px;
+        color:  #ff4d00;
+      }
+    }
+
+    p {
+      color: rgba(148, 139, 139, 0.684);
+      margin-bottom: 40px;
+    }
+    a{
+       background:linear-gradient(to right, #e45622a0, #2de2d69a);
+      padding: 15px 20px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      
+    }
+    a:hover{
+       background:linear-gradient(to right, #e45622a0, #2de2d69a);
+        box-shadow: 2px 2px 2px rgba(255, 68, 0, 0.779) ;
+    }
+  }
 }
