@@ -1,0 +1,238 @@
+@media (min-width:800px) and (max-width:898px) {
+    .about {
+        padding: 60px 40px;
+
+        .team-values {
+            margin: 100px;
+
+            .team {
+                font-size: 30px;
+            }
+
+            .value {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .future {
+        margin-top: 20px;
+    }
+
+    .media {
+        padding: 30px 60px 30px;
+        gap: 15px;
+
+        .made {
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+
+            h3 {
+                color: orangered;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .ho {
+        padding: 0px 60px 10px;
+
+        h1 {
+            font-size: 20px;
+        }
+
+    }
+
+    .oo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin: 10px 0px;
+
+        img {
+            border-radius: 10px;
+        }
+
+        #momo {
+            display: none;
+        }
+    }
+
+    .gruop {
+        gap: 10px;
+        padding-bottom: 20px;
+
+        .gio {
+            gap: 30px;
+            padding: 0px 10px;
+
+            img {
+                width: 300px;
+            }
+
+            .he {
+                width: 550px;
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 13px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding: 30px 60px;
+        gap: 20px;
+
+        .footer-logo {
+            .footer-social {
+                a {
+                    font-size: 16px;
+                }
+            }
+
+            span {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+    }
+
+}
+
+@media (min-width:300px) and (max-width:600px) {
+     .about {
+        padding: 60px 40px;
+
+        .team-values {
+            margin: 100px;
+
+            .team {
+                font-size: 20px;
+            }
+
+            .value {
+                font-size: 11px;
+            }
+        }
+    }
+
+    .future {
+        margin-top: 10px;
+    }
+
+    .media {
+        padding: 15px 40px 15px;
+        gap: 8px;
+
+        .made {
+            width: 150px;
+            padding: 20px;
+            text-align: center;
+
+            h3 {
+                color: orangered;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .ho {
+        padding: 0px 40px 10px;
+
+        h1 {
+            font-size: 16px;
+        }
+
+    }
+
+    .oo {
+        img {
+            border-radius: 10px;
+        }
+
+        #momo {
+            display: none;
+        }
+    }
+
+    .gruop {
+        gap: 20px;
+        padding-bottom: 15px;
+
+        .gio {
+            gap: 20px;
+            padding: 0px 10px;
+
+            img {
+                width: 250px;
+            }
+
+            .he {
+                width: 450px;
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 13px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    .footer {
+        padding: 10px 20px;
+        gap: 10px;
+
+        .footer-logo {
+            .footer-social {
+                a {
+                    font-size: 13px;
+                }
+            }
+
+            span {
+                font-size: 13px;
+            }
+
+            p {
+                font-size: 8px;
+            }
+
+            img {
+                width: 60px;
+            }
+        }
+
+        .footer-links {
+            h4 {
+                margin-bottom: 10px;
+                font-size: 11px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 8px;
+
+                    a {
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+
+    }
+}
