@@ -112,38 +112,66 @@
 }
 
 @media (min-width:300px) and (max-width:600px) {
+     .header {
+        padding: 5px 5px;
+        width: 98%;
+
+        img {
+            width: 80px;
+        }
+
+        .nav {
+            ul {
+                li {
+                    a {
+                        font-weight: 200;
+                        padding: 25px 10px;
+                    }
+                }
+            }
+        }
+    }
      .about {
         padding: 60px 40px;
 
         .team-values {
-            margin: 100px;
+            margin: 50px;
 
             .team {
-                font-size: 20px;
+                font-size: 16px;
             }
 
             .value {
-                font-size: 11px;
+                font-size: 8px;
             }
         }
     }
 
     .future {
         margin-top: 10px;
+        h1{
+            font-size: 16px;
+        }
+        p{
+            font-size: 11px;
+        }
     }
 
     .media {
-        padding: 15px 40px 15px;
+        padding: 10px 20px 10px;
         gap: 8px;
 
         .made {
             width: 150px;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
 
             h3 {
                 color: orangered;
-                font-size: 16px;
+                font-size: 13px;
+            }
+            p{
+                font-size: 11px;
             }
         }
     }
@@ -154,6 +182,9 @@
         h1 {
             font-size: 16px;
         }
+        p{
+            font-size: 11px;
+        }
 
     }
 
@@ -162,7 +193,7 @@
             border-radius: 10px;
         }
 
-        #momo {
+        #juju {
             display: none;
         }
     }
@@ -170,20 +201,24 @@
     .gruop {
         gap: 20px;
         padding-bottom: 15px;
-
+        h1{
+            font-size: 16px;
+        }
         .gio {
+            display: flex;
+            flex-direction: column;
             gap: 20px;
             padding: 0px 10px;
 
             img {
-                width: 250px;
+                width: 500px;
             }
 
             .he {
-                width: 450px;
+                width: 500px;
 
                 h3 {
-                    font-size: 18px;
+                    font-size: 16px;
                 }
 
                 p {
