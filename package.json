@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "build": "mkdir -p dist && cp *.html dist/ && cp -r SASS/ dist/ && cp -r components/ dist/ && cp -r image/ dist/",
+    "dev": "npm run build && nginx -g 'daemon off;'"
+  }
+}
