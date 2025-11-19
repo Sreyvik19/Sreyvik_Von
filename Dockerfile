@@ -1,32 +1,29 @@
-# Build stage
-FROM node:18-alpine as build
+# Stage 1: Build SCSS to CSS (optional)
+FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+# Copy only SCSS/SASS
+COPY scss/ ./scss/
 
-# Install dependencies
-RUN npm install
+# Install sass globally
+RUN npm install -g sass
 
-# Copy source files
-COPY . .
+# Compile SCSS to CSS
+RUN mkdir -p dist/css && \
+    sass scss:dist/css
 
-# Create dist directory and copy files
-RUN mkdir -p dist && \
-    cp *.html dist/ && \
-    cp -r SASS/ dist/ && \
-    cp -r components/ dist/ && \
-    cp -r image/ dist/
 
-# Production stage
+# Stage 2: Serve static files
 FROM nginx:alpine
 
-# Copy built files to nginx
-COPY --from=build /app/dist /usr/share/nginx/html
+# Copy compiled CSS
+COPY --from=builder /app/dist/css /usr/share/nginx/html/css
 
-# Copy nginx config if needed
-# COPY nginx.conf /etc/nginx/nginx.conf
+# Copy HTML, images, and other assets
+COPY *.html /usr/share/nginx/html/
+COPY image/ /usr/share/nginx/html/image/
+COPY components/ /usr/share/nginx/html/components/
 
 EXPOSE 80
 
